@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: arial;
+    border: 1px solid black;
+}
+
+#box1 { background-color: #2372b3; grid-column: span 2; grid-row: span 3; }
+#box2 { background-color: #000000; grid-column: span 4; grid-row: span 1; color: white; }
+#box3 { background-color: #964B00; grid-column: span 2; grid-row: span 2; color: white; }
+#box4 { background-color: #FFFFFF; grid-column: span 1; grid-row: span 3; }
+#box5 { background-color: #ee8ede; grid-column: span 1; grid-row: span 1; }
+#box6 { background-color: #33b4ff; grid-column: span 1; grid-row: span 2; }
+#box7 { background-color: #e7eb15; grid-column: span 2; grid-row: span 1; }
+#box8 { background-color: #A833FF; grid-column: span 2; grid-row: span 2; color: white;}
+#box9 { background-color: #d6111b; grid-column: span 2; grid-row: span 1; color: white;}
+#box10 { background-color: #bababa; grid-column: span 2; grid-row: span 2; }
+#box11 { background-color: #0ced0c; grid-column: span 2; grid-row: span 1; }
+#box12 { background-color: #ed660c; grid-column: span 2; grid-row: span 1; }
+
+@media screen and (min-width: 720px) {
+    .box{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .box{
+        font-size: 40px;
+    }
+}
