@@ -1,2 +1,2 @@
 # web development
-mata kuliah pengembangan web semester 5
+Mata kuliah pengembangan web semester 5
