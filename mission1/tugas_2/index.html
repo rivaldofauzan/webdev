@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://hackdesign.org:80" rel="canonical"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Design lessons for everyone, curated by top designers
+ - Hack Design</title>
+        <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="An easy to follow design course for people who do amazing things. Receive a design lesson in your inbox each week, hand crafted by a design pro. Learn at your own pace, and apply it to your real life work – no fake projects here."/>
+        <meta property="twitter:card" content="summary"/>
+        <meta property="twitter:site" content="hackdesign"/>
+        <meta property="twitter:creator" content="hackdesign"/>
+        <meta property="og:title" content="Design lessons for everyone, curated by top designers"/>
+        <meta property="og:description" content="An easy to follow design course for people who do amazing things. Receive a design lesson in your inbox each week, hand crafted by a design pro. Learn at your own pace, and apply it to your real life work – no fake projects here."/>
+        <meta property="og:url" content="https://hackdesign.org"/>
+        <meta property="fb:admins" content="1082730090">
+        <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+        <link rel="stylesheet" media="all" href="style.css"/>
+        <script>
+            (function(d) {
+                var config = {
+                    kitId: 'kyb5lym',
+                    scriptTimeout: 3000,
+                    async: true
+                }, h = d.documentElement, t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a;
+                h.className += " wf-loading";
+                tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function() {
+                    a = this.readyState;
+                    if (f || a && a != "complete" && a != "loaded")
+                        return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config)
+                    } catch (e) {}
+                }
+                ;
+                s.parentNode.insertBefore(tk, s)
+            }
+            )(document);
+        </script>
+        <script>
+            (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                }
+                ;
+                h._hjSettings = {
+                    hjid: 612701,
+                    hjsv: 5
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            }
+            )(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+        <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="eHwhfgN4ECgGe3dRNa5GOuIP3lcgMLO+R1wdnV7zstOwExhWTasz2isYpRK/i48QCN9boYH5giv5KfXBUcAWIA=="/>
+        <script nonce="dbc0acaa-ffbb-4532-aa89-0397844122e4">
+            (function(w, d) {
+                !function(j, k, l, m) {
+                    j[l] = j[l] || {};
+                    j[l].executed = [];
+                    j.zaraz = {
+                        deferred: [],
+                        listeners: []
+                    };
+                    j.zaraz.q = [];
+                    j.zaraz._f = function(n) {
+                        return async function() {
+                            var o = Array.prototype.slice.call(arguments);
+                            j.zaraz.q.push({
+                                m: n,
+                                a: o
+                            })
+                        }
+                    }
+                    ;
+                    for (const p of ["track", "set", "debug"])
+                        j.zaraz[p] = j.zaraz._f(p);
+                    j.zaraz.init = ()=>{
+                        var q = k.getElementsByTagName(m)[0]
+                          , r = k.createElement(m)
+                          , s = k.getElementsByTagName("title")[0];
+                        s && (j[l].t = k.getElementsByTagName("title")[0].text);
+                        j[l].x = Math.random();
+                        j[l].w = j.screen.width;
+                        j[l].h = j.screen.height;
+                        j[l].j = j.innerHeight;
+                        j[l].e = j.innerWidth;
+                        j[l].l = j.location.href;
+                        j[l].r = k.referrer;
+                        j[l].k = j.screen.colorDepth;
+                        j[l].n = k.characterSet;
+                        j[l].o = (new Date).getTimezoneOffset();
+                        if (j.dataLayer)
+                            for (const w of Object.entries(Object.entries(dataLayer).reduce(((x,y)=>({
+                                ...x[1],
+                                ...y[1]
+                            })), {})))
+                                zaraz.set(w[0], w[1], {
+                                    scope: "page"
+                                });
+                        j[l].q = [];
+                        for (; j.zaraz.q.length; ) {
+                            const z = j.zaraz.q.shift();
+                            j[l].q.push(z)
+                        }
+                        r.defer = !0;
+                        for (const A of [localStorage, sessionStorage])
+                            Object.keys(A || {}).filter((C=>C.startsWith("_zaraz_"))).forEach((B=>{
+                                try {
+                                    j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B))
+                                } catch {
+                                    j[l]["z_" + B.slice(7)] = A.getItem(B)
+                                }
+                            }
+                            ));
+                        r.referrerPolicy = "origin";
+                        r.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l])));
+                        q.parentNode.insertBefore(r, q)
+                    }
+                    ;
+                    ["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init)
+                }(w, d, "zarazData", "script");
+            }
+            )(window, document);
+        </script>
+    </head>
+    <body class="static home" data-spy="scroll" data-target="#navbar-example">
+        <header class="bg-light-gray">
+            <div class="md-flex flex-center container">
+                <div class="flex-none">
+                    <a href="index.html">
+                        <img width="200" alt="Hack Design" class="py2" src="assets/logo_hackdesign.svg"/>
+                    </a>
+                </div>
+                <div class="flex-auto"></div>
+                <div class="flex-none">
+                    <nav class="h5 sm-show">
+                        <a class="gray mr3" href="https://hackdesign.org/lessons">View all lessons</a>
+                        <a class="gray mr3" href="https://hackdesign.org/toolkit">Toolkit</a>
+                    </nav>
+                </div>
+            </div>
+            <nav class="sm-hide h5 border-top border-bottom px2 py1">
+                <a class="red mr3 bold" href="https://hackdesign.org/patron">Become a Patron</a>
+                <a class="gray mr3" href="https://hackdesign.org/lessons">Lessons</a>
+                <a class="gray mr3" href="https://hackdesign.org/toolkit">Toolkit</a>
+                <a class="gray mr3" href="https://hackdesign.org/sign_in">Sign In</a>
+            </nav>
+        </header>
+        <div id="flash" class="row"></div>
+        <header class="bg-light-gray py3">
+            <div class="container">
+                <div class="col-12 md-col-10 mx-auto">
+                    <h1 class="center m0 h3 md-h1 slate serif regular">
+                        An <span class="red bold">easy to follow design course</span>
+                        for people who do amazing things.
+      
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <section class="bg-light-gray py3">
+            <div class="container">
+                <div class="col-12 md-col-8 mx-auto">
+                    <p class="center med-gray h5 md-h4 mb3">Receive a design lesson in your inbox each week, hand crafted by a design pro. Learn at
+      your own pace, and apply it to your real life work.
+    </p>
+                </div>
+                <div class="col-12 md-col-6 mx-auto">
+                    <form action="https://sendy.simplecasual.email/subscribe" method="POST" accept-charset="utf-8">
+                        <div class="flex shadow rounded">
+                            <label class="hide" for="name">Name</label>
+                            <input class="hide" type="text" name="name" id="name"/>
+                            <label class="hide" for="email">Email</label>
+                            <input class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="email" id="email" autofocus="true" placeholder="Email address"/>
+                            <label class="hide" for="EmailHash">EmailHash</label>
+                            <input class="hide" type="text" name="EmailHash" id="EmailHash"/>
+                            <br/>
+                            <div style="display:none;">
+                                <label for="hp">HP</label>
+                                <br/>
+                                <input type="text" name="hp" id="hp"/>
+                            </div>
+                            <input type="hidden" name="list" value="ifsRgXhlPF892763zpUGTl1MTA"/>
+                            <input type="hidden" name="subform" value="yes"/>
+                            <input class="btn rounded-right h5 white bg-green" type="submit" name="submit" id="submit" value="Get started"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light-gray py3 center">
+            <div class="container mx-auto">
+                <div class="clearfix mxn2">
+                    <div class="col col-12 md-col-4 px2">
+                        <img alt="Edit Entry" src="assets/curated.svg"/>
+                        <h4 class="h3 m23 mb2 regular dark-blue">Curated Resources</h4>
+                        <p class="med-gray h5 mb3">Don't know where to start? We’ve enlisted the world’s top designers to craft
+          lessons for learning the tools, techniques &amp;terminology of good design.
+        </p>
+                    </div>
+                    <div class="col col-12 md-col-4 px2">
+                        <img alt="Edit Entry" class="mt3" src="assets/interactive.svg"/>
+                        <h4 class="h3 mt2 mb2 regular dark-blue">Interactive Content</h4>
+                        <p class="med-gray h5 mb3">Learn by doing. Play with design puzzles and challenging games as you learn.
+          Test your skills and explore possibilities.
+        </p>
+                    </div>
+                    <div class="col col-12 md-col-4 px2">
+                        <img alt="Edit Entry" class="mt3" src="assets/awesome.svg"/>
+                        <h4 class="h3 mt2 mb2 regular dark-blue">Awesome Design Tools</h4>
+                        <p class="med-gray h5">We’ve curated a list of the best design tools to help you
+          figure out which ones to learn, and discover new and helpful tools you may have never
+          heard of.
+        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clearfix py3 mt3">
+            <div class="container">
+                <h3 class="h2 serif mt0 mb2 semibold center dark-blue">Meet your instructors</h3>
+                <p class="center">
+                    <a class="red" href="https://hackdesign.org/curators">View the complete list</a>
+                </p>
+                <div class="flex flex-wrap mxn2">
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/rivaldo.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Rivaldo Fauzan</h5>
+                            <p class="med-gray underline-link">
+                                I'm co-founder and design lead at <a href="http://leanstartupmachine.com/">Lean Startup Machine</a>
+                                and creator of <a href="http://leanstartupmachine.com/validationboard/">Validation Board</a>
+                                . I'm also Lean UX coach for The White House and Wharton UPenn. I fight for the users, push pixels, <a href="https://twitter.com/uxceo">tweet</a>
+                                and write code.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/rofaul.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Rofaul Akrom</h5>
+                            <p class="med-gray underline-link">
+                                I'm a maker+designer who loves stickynotes, sketching and startups. At <a href="http://luxr.co/" target="_blank">LUXr</a>
+                                , I get to meet incredible entrepreneurs and help them design great customer experiences. I've worked at places like <a href="http://adaptivepath.com/" target="_blank">Adaptive Path</a>
+                                and <a href="http://thecrucible.org/" target="_blank">The Crucible</a>
+                                . You can find me on <a href="https://twitter.com/katerutter" target="_blank">Twitter</a>
+                                .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/danu.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Danu Mahesa</h5>
+                            <p class="med-gray underline-link">
+                                I'm a designer with a love for creating products that are meaningful, simple and easy to use. I co-founded and am currently building <a href="http://liber.io/" target="_blank">Liberio</a>
+                                , a web app for simple eBook creation and publishing. In my spare time, I write and speak. I love <a href="https://twitter.com/imcatnoone" target="_blank">talking shop on twitter</a>
+                                , so let's chat!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/gian.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Gian Sandrova</h5>
+                            <p class="med-gray underline-link">
+                                I'm a design technologist living in San Francisco. I have worked for companies such as Adaptive Path, Method and Current TV and worked with clients including the United Nations, Samsung, Adobe, TED.com and Foodspotting. I am a long-time supporter of open source and have several of my own including <a href="https://github.com/somerandomdude/Frank" target="_blank">Frank</a>
+                                , <a href="https://useiconic.com" target="_blank">Iconic</a>
+                                and <a href="https://thenounproject.com/somerandomdude/collection/cue/" target="_blank">Cue</a>
+                                . <a href="https://twitter.com/somerandomdude" target="_blank">Follow me on Twitter</a>
+                                .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/regi.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Regi Purnama</h5>
+                            <p class="med-gray underline-link">
+                                I write for <a href="http://techcrunch.com/tag/nir-eyal/" target="_blank">TechCrunch</a>
+                                , <a href="https://blogs.forbes.com/nireyal/" target="_blank">Forbes</a>
+                                , <a href="https://www.psychologytoday.com/blog/automatic-you" target="_blank">Psychology Today</a>
+                                , and am a frequent speaker at industry conferences and Fortune 500 companies. I have <a href="http://www.gsb.stanford.edu/users/neyal">Lectured</a>
+                                at the Stanford Graduate School of Business and Design School and have sold two technology companies since 2003.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/raka.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Raka Mahardika</h5>
+                            <p class="med-gray underline-link">
+                                Designer Co-founder <a href="https://exposure.co">Exposure</a>
+                                &leading design and creative at <a href="https://voyage.auto">Voyage</a>
+                                . Professional internet pal. Take photos, build products.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/rafi.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Muhamad Rafi Farhan</h5>
+                            <p class="med-gray underline-link">
+                                I'm a designer of digital products in my late 20’s who is little too into simplicity and pixel-perfection. I studied interactive visual imaging and photography in Missouri, and somehow ended up in foggy San Francisco designing things with unbelievably talented teams such as <a href="https://fitbit.com" target="_blank">Fitbit</a>
+                                , <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                                , <a href="https://www.zendesk.com" target="_blank">Zendesk</a>
+                                , and <a href="https://www.onekingslane.com" target="_blank">One Kings Lane</a>
+                                .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/rachmat.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Rachmat Purwa</h5>
+                            <p class="med-gray underline-link">
+                                I'm a writer and designer from Brooklyn, living in Baltimore. I'm the co-founder of <a href="http://theindustry.cc" target="_blank">The Industry</a>
+                                (a design publication) and <a href="http://evomail.io" target="_blank">Evomail</a>
+                                (an iPad email app). I advise companies <a href="http://advise.me" target="_blank">here</a>
+                                and <a href="http://6wunderkinder.com/" target="_blank">there</a>
+                                . In the past I've worked with TED and Treehouse to promote creativity.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/ferdy.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Mochamad Ferdy Fauzan</h5>
+                            <p class="med-gray underline-link">
+                                I'm a co-founder and design lead at <a href="http://pic-collage.com" target="_blank">PicCollage</a>
+                                . It is a fun and easy way to create collages on your mobile devices. I love colors and patterns and the process of bringing ideas to life. You can find me on <a href="https://twitter.com/jjobear" target="_blank">Twitter</a>
+                                .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/daffa.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Daffa Raihandika</h5>
+                            <p class="med-gray underline-link">
+                                an equal command of technology and form • functional programming (oc)cultist • design tools <a href="https://twitter.com/airbnbdesign" target="_blank">@airbnbdesign</a>
+                                • writing: <a href="http://jon.gold/txt" target="_blank">http://jon.gold/txt</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/reza.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Reza Ananta</h5>
+                            <p class="med-gray underline-link">
+                                I &rsquo;m the founder of <a href="http://bjango.com" target="_blank">Bjango</a>
+                                , an indie Mac and iOS developer. I &rsquo;m also a designer. I co-host a podcast called <a href="http://bjango.com/articles/iterate/" target="_blank">Iterate</a>
+                                with Rene Ritchie and Seth Clifford. Sometimes I write articles about design for Bjango &rsquo;s website. I occasionally write for <a href="http://www.smashingmagazine.com" target="_blank">Smashing Magazine</a>
+                                and speak at conferences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md-flex col-12 md-col-6 p2 border-box">
+                        <div class="flex-none mr3">
+                            <img width="100" src="assets/reihan.png"/>
+                        </div>
+                        <div class="flex-auto">
+                            <h5 class="h3 mt0 mb1 regular dark-blue">Reihan Hadi</h5>
+                            <p class="med-gray underline-link">
+                                Kyle Bragger is co-founder of <a href="https://exposure.co/">Exposure</a>
+                                , the best photography storytelling tool on the web. Previously, he was a member of Elepath, a product design studio. He also created the developer/designer community Forrst and want-to-do list Thinglist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="py4 container">
+            <div class="clearfix mxn3">
+                <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+                    <h3 class="mt0 mb1 h4 slate">Join 400,000+ others in learning design</h3>
+                    <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+                    <form action="https://sendy.simplecasual.email/subscribe" method="POST" accept-charset="utf-8">
+                        <div class="flex shadow rounded">
+                            <label class="hide" for="name">Name</label>
+                            <input class="hide" type="text" name="name" id="name"/>
+                            <label class="hide" for="email">Email</label>
+                            <input class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="email" id="email" placeholder="Email address"/>
+                            <label class="hide" for="EmailHash">EmailHash</label>
+                            <input class="hide" type="text" name="EmailHash" id="EmailHash"/>
+                            <br/>
+                            <div style="display:none;">
+                                <label for="hp">HP</label>
+                                <br/>
+                                <input type="text" name="hp" id="hp"/>
+                            </div>
+                            <input type="hidden" name="list" value="ifsRgXhlPF892763zpUGTl1MTA"/>
+                            <input type="hidden" name="subform" value="yes"/>
+                            <input class="btn rounded-right h5 white bg-green" type="submit" name="submit" id="submit" value="Get started"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <footer class="container">
+            <div class="flex border-top py2 border-top border-gray col-12">
+                <p class="flex-none mr2 med-gray">&copy;2022</p>
+                <div class="flex-auto"></div>
+                <nav class="flex-none mxn2">
+                    <a class="med-gray px2" href="https://hackdesign.org/about">About</a>
+                    <a class="med-gray px2" href="cdn-cgi/l/email-protection.html#5f3c30312b3e3c2b1f373e3c343b3a2c36383171302d38602c2a3d353a3c2b62173a267a6d6f2b373a2d3a7a6d6f173e3c347a6d6f1b3a2c363831">Contact</a>
+                    <a class="med-gray px2" href="https://hackdesign.org/curators">Curators</a>
+                    <a class="med-gray px2" href="https://hackdesign.org/privacy">Legal</a>
+                </nav>
+            </div>
+        </footer>
+        <script>
+            (function(b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] = function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                }
+                );
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-37398951-1');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
