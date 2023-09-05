@@ -110,7 +110,7 @@ function totalCost(product, action) {
 
     // Update the displayed cart total with the "Rp." currency symbol
     let cartTotal = localStorage.getItem("totalCost");
-    document.querySelector('.basketTotal').textContent = `Rp. ${cartTotal.toLocaleString()},00`;
+    document.querySelector('.basketTotal').textContent = `Rp. ${cartTotal.toLocaleString()}`;
 }
 
 
