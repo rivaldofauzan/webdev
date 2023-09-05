@@ -130,13 +130,13 @@ function displayCart() {
             `<div class="product"><ion-icon name="close-circle"></ion-icon><img src="./images/${item.tag}.png" />
                 <span class="sm-hide">${item.name}</span>
             </div>
-            <div class="price sm-hide">$${item.price},00</div>
+            <div class="price sm-hide">Rp.${item.price}</div>
             <div class="quantity">
                 <ion-icon class="decrease " name="arrow-dropleft-circle"></ion-icon>
                     <span>${item.inCart}</span>
                 <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>   
             </div>
-            <div class="total">$${item.inCart * item.price},00</div>`;
+            <div class="total">Rp.${item.inCart * item.price}</div>`;
         });
 
         productContainer.innerHTML += `
